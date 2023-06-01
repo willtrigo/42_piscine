@@ -6,14 +6,14 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 13:55:27 by dande-je          #+#    #+#             */
-/*   Updated: 2023/05/30 20:29:35 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/01 11:33:09 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
 void	ft_print_reverse_alphabet(void);
-void	ex_02_ft_putchar(char c);
+void	ft_putchar_ex02(char c);
 
 void	ft_print_reverse_alphabet(void)
 {
@@ -22,12 +22,12 @@ void	ft_print_reverse_alphabet(void)
 	letter = 'z';
 	while (letter >= 'a')
 	{
-		ex_02_ft_putchar(letter);
+		ft_putchar_ex02(letter);
 		letter--;
 	}
 }
 
-void	ex_02_ft_putchar(char c)
+void	ft_putchar_ex02(char c)
 {
 	write(1, &c, 1);
 }
