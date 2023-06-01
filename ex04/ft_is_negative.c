@@ -6,7 +6,7 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 18:18:08 by dande-je          #+#    #+#             */
-/*   Updated: 2023/05/31 20:04:05 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/01 10:55:11 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ void	ex04_ft_putchar(char c);
 
 int	ft_is_negative(int n)
 {
-	if (n < 0)
-		ex04_ft_putchar('N');
-	else
+	if (n >= 0)
 		ex04_ft_putchar('P');
+	else
+		ex04_ft_putchar('N');
 	return (0);
 }
 
