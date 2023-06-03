@@ -3,24 +3,44 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gmendonc <gmendonc@student.42.fr>          +#+  +:+       +#+        */
+/*   By: almarcos <almarcos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/03 16:20:46 by gmendonc          #+#    #+#             */
-/*   Updated: 2023/06/03 17:20:03 by gmendonc         ###   ########.fr       */
+/*   Updated: 2023/06/03 18:59:09 by almarcos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-void    ft_message_error(char n)
+
+void    ft_message_error()
 {
-    write(1, "Error ", 6);
-    write(1, "Error ", 6);
+    write(1, "Error\n", 6);
 }
 
+int inicializar()
+{
+    // code
+}
+
+int ft_str_len(char *str)
+{
+    int counter;
+    while (str[counter] != '\0')
+        counter++;
+    return counter;
+}
+
+int main(int argc, char *argv)
+{
+    int lenght = ft_str_len(&argv[1]);
+    return 0;
+}
+
+/*
 int	main(int argc, char *argv[])
 {
     int i;
-    int k;
+    int space
 
 	if(argc == 2)
     {
@@ -28,13 +48,23 @@ int	main(int argc, char *argv[])
         while (argv[1][i] != '\0')
         {
             if (argv[1][i] >= '1' && argv[1][i] <= '4')
+            {
                 write(1, "OK\n", 3);
+                //inicializar
+
+            }
             else if (argv[1][i] == ' ')
-                write(1, "OK\n", 3);
-            else if(i > 31)
-                ft_message_error();
+                space++;
+            // else if(ft_str_len(argv[1] !=))
+            // {
+            //     ft_message_error();
+            //     return 1;
+            // }
             else
+            {
                 ft_message_error();
+                return 1;
+            }
             i++;
         }
     }
@@ -42,3 +72,4 @@ int	main(int argc, char *argv[])
         ft_message_error();
 }
 
+*/
