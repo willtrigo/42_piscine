@@ -6,7 +6,7 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/03 21:55:49 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/04 16:35:28 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/04 20:35:12 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,17 +65,15 @@ void	ft_print_str(char c, int i_end)
 	}
 }
 
-int	ft_check_char(char num)
+char	ft_check_char(char txt, char txt2)
 {
-	if ((num >= '1' && num <= '4'))
+	if (((txt >= '1' && txt <= '4') && txt2 == ' ') || txt2 == '\0')
 	{
-		if ((num + 1) == ' ' || (num + 1) == '\0')
-			return (0);
+		return ('T');
 	}
-	else if (num == ' ')
+	else if (txt == ' ' && (txt2 >= '1' && txt2 <= '4'))
 	{
-		if ((num + 1) >= '1' && (num + 1) <= '4')
-			return (0);
+		return ('T');
 	}
-	return (1);
+	return ('F');
 }
