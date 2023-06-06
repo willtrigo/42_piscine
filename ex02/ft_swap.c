@@ -6,7 +6,7 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/03 20:22:12 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/03 21:19:18 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/06 11:38:13 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ void	ft_swap(int *a, int *b);
 
 void	ft_swap(int *a, int *b)
 {
-	int swap;
+	int	swap;
 
 	swap = *a;
 	*a = *b;

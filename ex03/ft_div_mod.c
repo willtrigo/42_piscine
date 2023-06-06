@@ -6,13 +6,13 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/04 21:16:25 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/05 12:34:37 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/06 11:37:16 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_div_mod(int a, int b, int *div, int *mod);
+void	ft_div_mod(int a, int b, int *div, int *mod);
 
-void ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
 	*div = a / b;
 	*mod = a % b;
