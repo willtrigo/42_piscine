@@ -6,13 +6,13 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 22:34:02 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/06 22:35:23 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/07 15:50:18 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_str_is_numeric(char *str);
-int		ft_lenstr(char *str);
-char	ft_is_alpha(char str);
+int		ft_lenstr_ex03(char *str);
+char	ft_is_numeric(char str);
 
 int	ft_str_is_numeric(char *str)
 {
@@ -28,7 +28,7 @@ int	ft_str_is_numeric(char *str)
 			char_type = 0;
 			break ;
 		}
-		if (ft_is_alpha(str[i]) == 'F')
+		if (ft_is_numeric(str[i]) == 'F')
 		{
 			char_type = 0;
 			break ;
@@ -38,18 +38,16 @@ int	ft_str_is_numeric(char *str)
 	return (char_type);
 }
 
-char	ft_is_alpha(char str)
+char	ft_is_numeric(char str)
 {
-	if (str >= 'a' && str <= 'z')
-		return ('T');
-	else if (str >= 'A' && str <= 'Z')
+	if (str >= '0' && str <= '9')
 		return ('T');
 	else if (str == ' ')
 		return ('T');
 	return ('F');
 }
 
-int	ft_lenstr(char *str)
+int	ft_lenstr_ex03(char *str)
 {
 	int	i;
 
