@@ -6,12 +6,12 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 19:30:27 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/06 10:47:50 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/07 21:37:57 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n);
-int		ft_str_len(char *str);
+int		ft_str_len_ex01(char *str);
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
@@ -32,7 +32,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	return (dest);
 }
 
-int	ft_str_len(char *str)
+int	ft_str_len_ex01(char *str)
 {
 	int	i;
 

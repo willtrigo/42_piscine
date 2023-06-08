@@ -6,12 +6,12 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 11:03:53 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/06 20:22:16 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/07 21:35:53 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_str_is_alpha(char *str);
-int		ft_lenstr(char *str);
+int		ft_lenstr_ex02(char *str);
 char	ft_is_alpha(char str);
 
 int	ft_str_is_alpha(char *str)
@@ -49,7 +49,7 @@ char	ft_is_alpha(char str)
 	return ('F');
 }
 
-int	ft_lenstr(char *str)
+int	ft_lenstr_ex02(char *str)
 {
 	int	i;
 
