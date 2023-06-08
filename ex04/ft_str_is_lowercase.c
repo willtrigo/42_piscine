@@ -6,7 +6,7 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 21:24:02 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/07 21:35:08 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/08 10:44:08 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_str_is_lowercase(char *str)
 			char_type = 0;
 			break ;
 		}
-		if (ft_is_numeric(str[i]) == 'F')
+		if (ft_is_lowercase(str[i]) == 'F')
 		{
 			char_type = 0;
 			break ;
