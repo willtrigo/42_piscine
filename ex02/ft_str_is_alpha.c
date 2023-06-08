@@ -6,7 +6,7 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 11:03:53 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/07 21:35:53 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/08 10:36:49 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_str_is_alpha(char *str)
 	char_type = 1;
 	while (str[i])
 	{
-		if (ft_lenstr(str) == 0)
+		if (ft_lenstr_ex02(str) == 0)
 		{
 			char_type = 0;
 			break ;

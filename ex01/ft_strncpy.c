@@ -6,7 +6,7 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 19:30:27 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/07 21:37:57 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/08 10:36:30 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	int	len;
 
 	i = 0;
-	len = ft_str_len(dest);
+	len = ft_str_len_ex01(dest);
 	while (((unsigned int)i) < n)
 	{
 		if (i < len)
