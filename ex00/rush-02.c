@@ -5,7 +5,7 @@
 void ft_error();
 char ft_is_digit(char *str);
 unsigned int ft_atoi(char *str);
-void data();
+void data(int result);
 void ft_search_struct(char *buffer);
 
 int main(int argc, char *argv[])
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
         {
             result = ft_atoi(argv[1]);
             printf("%d\n", result);
-            data();
+            data(result);
         }
     }
     else
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
         {
             result = ft_atoi(argv[2]);
             printf("%d\n", result);
-            data();
+            data(result);
         }
     }
 }
