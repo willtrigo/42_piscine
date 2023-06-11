@@ -40,7 +40,6 @@ int main(int argc, char *argv[])
     }
 }
 
-
 unsigned int ft_atoi(char *str)
 {
     unsigned int i;

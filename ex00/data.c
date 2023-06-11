@@ -3,62 +3,72 @@
 #include <stdio.h>
 
 void ft_error();
-void ft_search_struct(char *buffer);
+void ft_get_key(char *buffer);
+void data();
+unsigned int ft_atoi(char *str);
 
 void data()
 {
-    int fd;
-    char buffer[4096];
+	int fd;
+	char buffer[4096];
+	int file_size;
 
-    fd = open("numbers.dict", O_RDWR);
+	fd = open("numbers.dict", O_RDWR);
 
-    if (fd != -1)
-    {
-        read(fd, buffer, 4096);
-        printf("%s\n", buffer);
-        ft_search_struct(buffer);
-        close(fd);
-    }
-    else
-        ft_error();
+	if (fd != -1)
+	{
+		file_size = read(fd, buffer, 4096);
+		printf("%d\n", file_size);
+		ft_get_key(buffer);
+		close(fd);
+		buffer[file_size] = '\0';
+	}
+	else
+		ft_error();
 }
 
-typedef struct
-{
-    unsigned int key;
-    char description;
-} node;
+// typedef struct
+// {
+//     unsigned int key;
+//     char description;
+// } node;
 
-void ft_search_struct(char *buffer)
+void ft_get_key(char *buffer)
 {
+    char char_key[500][500];
+	unsigned int key[500];
+
     int i;
     int j;
-    node number[80];
-    int found_separator;
+    int k;
 
     i = 0;
-    found_separator = 0;
-    while (buffer[i] != 4)
+    j = 0;
+    while (buffer[i] != '\0')
     {
         if (buffer[i] >= '0' && buffer[i] <= '9')
         {
-            number[i].key = buffer[i] - '0';
-            printf("key: %d, ", number[i].key);
-        }
-        else if (buffer[i] == 58)
-        {
-            found_separator = 1;
-        }
-        else if (buffer[i] >= 'a' && buffer[i] <= 'z' && found_separator == 1)
-        {
-            j = i;
-            while (buffer[j] != '\0')
+            k = 0;
+            char_key[j][k] = buffer[i];
+
+            k = 1;
+            while (buffer[i + k] >= '0' && buffer[i + k] <= '9')
             {
-                number[i].description = buffer[j];
-                printf("description: %c ", number[i].description);
-                j++;
+                char_key[j][k] = buffer[i + k];
+                k++;
             }
+			key[j] = ft_atoi(&char_key[j][0]);
+			printf("key: %d\n", key[j]); 
+            i = i + k - 1;
+            j++;
         }
+
+
+        
         i++;
     }
+
+
+
 }
+	// void ft_desc(int key)
