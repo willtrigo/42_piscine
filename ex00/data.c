@@ -8,8 +8,9 @@ void ft_get_key_desc(unsigned int result, char *buffer);
 void	ft_init_key(unsigned int *key, char *buffer);
 void ft_init_desc(char **desc, char *buffer);
 unsigned int ft_atoi(char *str);
+void	ft_compare(unsigned int result, unsigned int *key, char **desc);
 
-void data(unsigned int result, char path)
+void data(unsigned int result, char *path)
 {
 	int fd;
 	char buffer[4096];
@@ -36,16 +37,8 @@ void data(unsigned int result, char path)
 		ft_init_desc(desc, buffer);
 		close(fd);
 		buffer[file_size] = '\0';
-		i = 0;
-		while(i < 10000000)
-		{
-			if(key[i] == result)
-			{
-				printf("%s\n", desc[i]);
-				break ;
-			}
-			i++;
-		}
+
+		ft_compare(result, key, desc);
 	}
 	else
 		ft_error();

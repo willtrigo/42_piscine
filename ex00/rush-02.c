@@ -5,14 +5,17 @@
 void			ft_error(void);
 char			ft_is_digit(char *str);
 unsigned int	ft_atoi(char *str);
-void			data(unsigned int result, char path);
+void			data(unsigned int result, char *path);
 void			ft_search_struct(char *buffer);
+
 
 int	main(int argc, char *argv[])
 {
 	char valid;
 	unsigned int result;
+	char *path;
 
+	path = "numbers.dict";
 	if (argc < 2 || argc > 3)
 	{
 		ft_error();
@@ -24,7 +27,7 @@ int	main(int argc, char *argv[])
 		{
 			result = ft_atoi(argv[1]);
 			printf("%d\n", result);
-			data(result, "numbers.dict");
+			data(result, path);
 		}
 	}
 	else
