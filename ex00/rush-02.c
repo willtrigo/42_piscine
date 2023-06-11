@@ -1,77 +1,41 @@
-#include <unistd.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 
-void ft_error();
-char ft_is_digit(char *str);
-unsigned int ft_atoi(char *str);
-void data(int result);
-void ft_search_struct(char *buffer);
+void			ft_error(void);
+char			ft_is_digit(char *str);
+unsigned int	ft_atoi(char *str);
+void			data(unsigned int result, char path);
+void			ft_search_struct(char *buffer);
 
-int main(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {
-    char valid;
-    unsigned int result;
+	char valid;
+	unsigned int result;
 
-    if (argc < 2 || argc > 3)
-    {
-        ft_error();
-    }
-    else if (argc == 2)
-    {
-        valid = ft_is_digit(argv[1]);
-        if (valid == 't')
-        {
-            result = ft_atoi(argv[1]);
-            printf("%d\n", result);
-            data(result);
-        }
-    }
-    else
-    {
-        // tratar o file;
-        valid = ft_is_digit(argv[2]);
-        if (valid == 't')
-        {
-            result = ft_atoi(argv[2]);
-            printf("%d\n", result);
-            data(result);
-        }
-    }
-}
+	if (argc < 2 || argc > 3)
+	{
+		ft_error();
+	}
+	else if (argc == 2)
+	{
+		valid = ft_is_digit(argv[1]);
+		if (valid == 't')
+		{
+			result = ft_atoi(argv[1]);
+			printf("%d\n", result);
+			data(result, "numbers.dict");
+		}
+	}
+	else
+	{
+		valid = ft_is_digit(argv[2]);
+		if (valid == 't')
+		{
+			result = ft_atoi(argv[2]);
+			printf("%d\n", result);
+			data(result, argv[1]);
+		}
+	}
 
-unsigned int ft_atoi(char *str)
-{
-    unsigned int i;
-    unsigned int result;
-
-    i = 0;
-    result = 0;
-    while (str[i] != '\0')
-    {
-        result = (result * 10) + (str[i] - '0');
-        i++;
-    }
-    return result;
-}
-
-char ft_is_digit(char *str)
-{
-    int i;
-    i = 0;
-    while (str[i] != '\0')
-    {
-        if (str[i] < '0' || str[i] > '9')
-        {
-            ft_error();
-            return 'f';
-        }
-        i++;
-    }
-    return 't';
-}
-
-void ft_error()
-{
-    write(1, "error\n", 6);
 }

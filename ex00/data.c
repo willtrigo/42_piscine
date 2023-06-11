@@ -1,100 +1,119 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 void ft_error();
 void ft_get_key_desc(unsigned int result, char *buffer);
+void	ft_init_key(unsigned int *key, char *buffer);
+void ft_init_desc(char **desc, char *buffer);
 unsigned int ft_atoi(char *str);
 
-void data(int result)
+void data(unsigned int result, char path)
 {
 	int fd;
 	char buffer[4096];
 	int file_size;
+	unsigned int key[500];
+	char **desc;
+	desc = malloc(500 * sizeof(char *));
+	int i;
 
-	fd = open("numbers.dict", O_RDWR);
+	i = 0;
+	while (i < 500)
+	{
+		desc[i] = malloc(500 * sizeof(char));
+		i++;
+	}
+	i = 0;
+	fd = open(path, O_RDONLY);
 
 	if (fd != -1)
 	{
 		file_size = read(fd, buffer, 4096);
 		printf("%d\n", file_size);
-		ft_get_key_desc(result, buffer);
+		ft_init_key(key, buffer);
+		ft_init_desc(desc, buffer);
 		close(fd);
 		buffer[file_size] = '\0';
+		i = 0;
+		while(i < 10000000)
+		{
+			if(key[i] == result)
+			{
+				printf("%s\n", desc[i]);
+				break ;
+			}
+			i++;
+		}
 	}
 	else
 		ft_error();
+	free(desc);
 }
 
-void ft_get_key_desc(unsigned int result, char *buffer)
+void	ft_init_key(unsigned int *key, char *buffer)
 {
 	char char_key[500][500];
-	unsigned int key[500];
-	char desc[500][500];
-
 	int i;
-	int j;
-	int k;
+	int index_row;
+	int index_col;
 
 	i = 0;
-	j = 0;
+	index_row = 0;
 	while (buffer[i] != '\0')
 	{
 		if (buffer[i] >= '0' && buffer[i] <= '9')
 		{
-			k = 0;
-			char_key[j][k] = buffer[i];
+			index_col = 0;
+			char_key[index_row][index_col] = buffer[i];
 
-			k = 1;
-			while (buffer[i + k] >= '0' && buffer[i + k] <= '9')
+			index_col = 1;
+			while (buffer[i + index_col] >= '0' && buffer[i + index_col] <= '9')
 			{
-				char_key[j][k] = buffer[i + k];
-				k++;
+				char_key[index_row][index_col] = buffer[i + index_col];
+				index_col++;
 			}
-			key[j] = ft_atoi(&char_key[j][0]);
+			key[index_row] = ft_atoi(&char_key[index_row][0]);
 
-			i = i + k - 1;
-			j++;
+			i = i + index_col - 1;
+			index_row++;
 		}
 		i++;
 	}
+}
+
+void ft_init_desc(char **desc, char *buffer)
+{
+	int i;
+	int index_row;
+	int index_col;
 
 	i = 0;
-	j = 0;
+	index_row = 0;
+	
 	while (buffer[i] != '\0')
 	{
 		if ((buffer[i] >= 32 && buffer[i] <= 126))
 		{
 			if (buffer[i] > 58)
 			{
-				k = 0;
-				desc[j][k] = buffer[i];
+				index_col = 0;
+				desc[index_row][index_col] = buffer[i];
 
-				k = 1;
-				while (buffer[i + k] >= 'a' && buffer[i + k] <= 'z')
+				index_col = 1;
+				while (buffer[i + index_col] >= 'a' && buffer[i + index_col] <= 'z')
 				{
-					desc[j][k] = buffer[i + k];
-					k++;
+					desc[index_row][index_col] = buffer[i + index_col];
+					index_col++;
 				}
 
-				i = i + k - 1;
-				j++;
+				i = i + index_col - 1;
+				index_row++;
 			}
 		}
 		i++;
 	}
-
-	i = 0;
-	while(i < 21)
-	{
-		if(key[i] == result)
-		{
-			printf("%s\n", desc[i]);
-			
-		}
-		i++;
-	}
-
 }
 
 // void ft_get_key(char *buffer)
