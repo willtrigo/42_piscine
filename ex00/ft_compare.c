@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 void	ft_look_for(unsigned int result, unsigned int *key, char **desc);
 
 void	ft_compare(unsigned int result, unsigned int *key, char **desc)
@@ -18,7 +16,12 @@ void	ft_compare(unsigned int result, unsigned int *key, char **desc)
 		{
 			divider = 1000000000;
 			x = result / divider;
-			ft_look_for(x, key, desc);
+
+			if (x > 9)
+				ft_compare(x, key, desc);
+			else
+				ft_look_for(x, key, desc);
+
 			ft_look_for(divider, key, desc);
 			result = result % divider;
 		}
@@ -30,7 +33,12 @@ void	ft_compare(unsigned int result, unsigned int *key, char **desc)
 		{
 			divider = 1000000;
 			x = result / divider;
-			ft_look_for(x, key, desc);
+
+			if (x > 9)
+				ft_compare(x, key, desc);
+			else
+				ft_look_for(x, key, desc);
+
 			ft_look_for(divider, key, desc);
 			result = result % divider;
 		}
@@ -38,11 +46,16 @@ void	ft_compare(unsigned int result, unsigned int *key, char **desc)
 		{
 			ft_look_for(result, key, desc);
 		}
-		else if (result > 1000 && result > 1000000)
+		else if (result > 1000 && result < 1000000)
 		{
 			divider = 1000;
 			x = result / divider;
-			ft_look_for(x, key, desc);
+
+			if (x > 9)
+				ft_compare(x, key, desc);
+			else
+				ft_look_for(x, key, desc);
+				
 			ft_look_for(divider, key, desc);
 			result = result % divider;
 		}
@@ -50,7 +63,7 @@ void	ft_compare(unsigned int result, unsigned int *key, char **desc)
 		{
 			ft_look_for(result, key, desc);
 		}
-		else if (result > 100 && result > 1000)
+		else if (result > 100 && result < 1000)
 		{
 			divider = 100;
 			x = result / divider;
@@ -69,14 +82,11 @@ void	ft_compare(unsigned int result, unsigned int *key, char **desc)
 			ft_look_for(x, key, desc);
 			// mod = result % 10;
 
-			// printf("mod: %d\n", mod);
 			// ft_look_for(mod, key, desc);
 			result = result % 10;
-			// printf("new result: %d\n", result);
 		}
 		else if (result <= 20)
 		{
-			// printf("last result: %d\n", result);
 			ft_look_for(result, key, desc);
 			result = 0;
 		}

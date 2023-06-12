@@ -1,11 +1,9 @@
-
-#include <stdio.h>
 #include <stdlib.h>
 
 void			ft_error(void);
 char			ft_is_digit(char *str);
 unsigned int	ft_atoi(char *str);
-void			data(unsigned int result, char *path);
+void			ft_data(unsigned int result, char *path);
 void			ft_search_struct(char *buffer);
 
 
@@ -26,8 +24,7 @@ int	main(int argc, char *argv[])
 		if (valid == 't')
 		{
 			result = ft_atoi(argv[1]);
-			printf("%d\n", result);
-			data(result, path);
+			ft_data(result, path);
 		}
 	}
 	else
@@ -36,8 +33,7 @@ int	main(int argc, char *argv[])
 		if (valid == 't')
 		{
 			result = ft_atoi(argv[2]);
-			printf("%d\n", result);
-			data(result, argv[1]);
+			ft_data(result, argv[1]);
 		}
 	}
 

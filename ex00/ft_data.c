@@ -1,6 +1,5 @@
 #include <fcntl.h>
 #include <unistd.h>
-#include <stdio.h>
 #include <stdlib.h>
 
 void ft_error();
@@ -10,7 +9,7 @@ void ft_init_desc(char **desc, char *buffer);
 unsigned int ft_atoi(char *str);
 void	ft_compare(unsigned int result, unsigned int *key, char **desc);
 
-void data(unsigned int result, char *path)
+void ft_data(unsigned int result, char *path)
 {
 	int fd;
 	char buffer[4096];
@@ -32,7 +31,6 @@ void data(unsigned int result, char *path)
 	if (fd != -1)
 	{
 		file_size = read(fd, buffer, 4096);
-		printf("%d\n", file_size);
 		ft_init_key(key, buffer);
 		ft_init_desc(desc, buffer);
 		close(fd);
@@ -107,6 +105,32 @@ void ft_init_desc(char **desc, char *buffer)
 		}
 		i++;
 	}
+
+	// while (buffer[i] != '\0')
+    // {
+    //     if ((buffer[i] >= 32 && buffer[i] <= 126))
+    //     {
+    //         if(buffer[i] == ':')
+    //             found_separator = 1;
+    //         if (buffer[i] != 32 && buffer[i] != ':' && found_separator == 1)
+    //         {
+    //             index_col = 0;
+    //             found_separator = 0;
+    //             desc[index_row][index_col] = buffer[i];
+
+    //             index_col = 1;
+    //             while (buffer[i + index_col] >= 32 && buffer[i + index_col] <= 126 && buffer[i + index_col] != '\n')
+    //             {
+    //                 desc[index_row][index_col] = buffer[i + index_col];
+    //                 index_col++;
+    //             }
+
+    //             i = i + index_col - 1;
+    //             index_row++;
+    //         }
+    //     }
+    //     i++;
+    // }
 }
 
 // void ft_get_key(char *buffer)
