@@ -1,10 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_compare.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cogata <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/11 22:24:02 by cogata            #+#    #+#             */
+/*   Updated: 2023/06/11 22:24:04 by cogata           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 void	ft_look_for(unsigned int result, unsigned int *key, char **desc);
 
 void	ft_compare(unsigned int result, unsigned int *key, char **desc)
 {
-	unsigned int x;
-	unsigned int divider;
-	// unsigned int mod;
+	unsigned int	x;
+	unsigned int	divider;
 
 	if (result == 0)
 	{
@@ -16,12 +27,10 @@ void	ft_compare(unsigned int result, unsigned int *key, char **desc)
 		{
 			divider = 1000000000;
 			x = result / divider;
-
 			if (x > 9)
 				ft_compare(x, key, desc);
 			else
 				ft_look_for(x, key, desc);
-
 			ft_look_for(divider, key, desc);
 			result = result % divider;
 		}
@@ -33,12 +42,10 @@ void	ft_compare(unsigned int result, unsigned int *key, char **desc)
 		{
 			divider = 1000000;
 			x = result / divider;
-
 			if (x > 9)
 				ft_compare(x, key, desc);
 			else
 				ft_look_for(x, key, desc);
-
 			ft_look_for(divider, key, desc);
 			result = result % divider;
 		}
@@ -50,12 +57,10 @@ void	ft_compare(unsigned int result, unsigned int *key, char **desc)
 		{
 			divider = 1000;
 			x = result / divider;
-
 			if (x > 9)
 				ft_compare(x, key, desc);
 			else
 				ft_look_for(x, key, desc);
-				
 			ft_look_for(divider, key, desc);
 			result = result % divider;
 		}
@@ -80,9 +85,6 @@ void	ft_compare(unsigned int result, unsigned int *key, char **desc)
 			divider = result / 10;
 			x = divider * 10;
 			ft_look_for(x, key, desc);
-			// mod = result % 10;
-
-			// ft_look_for(mod, key, desc);
 			result = result % 10;
 		}
 		else if (result <= 20)

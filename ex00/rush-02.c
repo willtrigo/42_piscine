@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rush-02.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cogata <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/11 22:25:21 by cogata            #+#    #+#             */
+/*   Updated: 2023/06/11 22:25:22 by cogata           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
 void			ft_error(void);
@@ -6,12 +18,11 @@ unsigned int	ft_atoi(char *str);
 void			ft_data(unsigned int result, char *path);
 void			ft_search_struct(char *buffer);
 
-
 int	main(int argc, char *argv[])
 {
-	char valid;
-	unsigned int result;
-	char *path;
+	char			valid;
+	unsigned int	result;
+	char			*path;
 
 	path = "numbers.dict";
 	if (argc < 2 || argc > 3)
@@ -36,5 +47,4 @@ int	main(int argc, char *argv[])
 			ft_data(result, argv[1]);
 		}
 	}
-
 }

@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int ft_atoi(char *str);
+unsigned int	ft_atoi(char *str);
 
-unsigned int ft_atoi(char *str)
+unsigned int	ft_atoi(char *str)
 {
-	unsigned int i;
-	unsigned int result;
+	unsigned int	i;
+	unsigned int	result;
 
 	i = 0;
 	result = 0;
@@ -24,5 +24,5 @@ unsigned int ft_atoi(char *str)
 		result = (result * 10) + (str[i] - '0');
 		i++;
 	}
-	return result;
+	return (result);
 }

@@ -17,18 +17,19 @@ char	ft_is_digit(char *str);
 
 char	ft_is_digit(char *str)
 {
-	int i;
+	int	i;
+
 	i = 0;
 	while (str[i] != '\0')
 	{
 		if (str[i] < '0' || str[i] > '9')
 		{
 			ft_error();
-			return 'f';
+			return ('f');
 		}
 		i++;
 	}
-	return 't';
+	return ('t');
 }
 
 void	ft_error(void)
