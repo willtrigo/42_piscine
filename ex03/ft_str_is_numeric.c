@@ -6,7 +6,7 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 22:34:02 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/08 15:38:45 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/12 22:54:55 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,6 @@ int	ft_str_is_numeric(char *str)
 char	ft_is_numeric(char str)
 {
 	if (str >= '0' && str <= '9')
-		return ('T');
-	else if (str == ' ')
 		return ('T');
 	return ('F');
 }

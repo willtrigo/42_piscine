@@ -6,7 +6,7 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/08 10:45:36 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/08 15:38:25 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/12 22:53:16 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,6 @@ int	ft_str_is_uppercase(char *str)
 char	ft_is_uppercase(char str)
 {
 	if (str >= 'A' && str <= 'Z')
-		return ('T');
-	else if (str == ' ')
 		return ('T');
 	return ('F');
 }

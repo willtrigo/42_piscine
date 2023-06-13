@@ -6,7 +6,7 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 21:24:02 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/08 15:38:35 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/12 22:54:53 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,6 @@ int	ft_str_is_lowercase(char *str)
 char	ft_is_lowercase(char str)
 {
 	if (str >= 'a' && str <= 'z')
-		return ('T');
-	else if (str == ' ')
 		return ('T');
 	return ('F');
 }
