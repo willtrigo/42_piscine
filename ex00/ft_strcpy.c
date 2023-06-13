@@ -6,7 +6,7 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 15:38:03 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/05 19:28:49 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/12 22:37:27 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,11 @@ char	*ft_strcpy(char *dest, char *src)
 	int	i;
 
 	i = 0;
-	while (*src != '\0')
+	while (src[i])
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		dest[i] = src[i];
+		i++;
 	}
-	dest[i] = '\0';
+	dest[i] = src[i];
 	return (dest);
 }
