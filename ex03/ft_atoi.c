@@ -6,12 +6,12 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/13 18:18:28 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/14 13:37:44 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/14 13:45:57 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_atoi(char *str);
-int	ft_valid_isspace(char *str);
+int		ft_valid_isspace(char *str);
 
 #define TRUE 1
 #define FALSE 0
