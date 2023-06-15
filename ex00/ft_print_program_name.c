@@ -6,7 +6,7 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 13:52:01 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/14 22:03:13 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/15 10:25:47 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putstr(char *str);
 
 int	main(int agrc, char **agrv)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (i < agrc)

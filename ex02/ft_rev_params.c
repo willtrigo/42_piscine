@@ -6,7 +6,7 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 19:56:46 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/14 23:30:36 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/15 10:49:13 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,9 @@ void	ft_putstr_ex02(char *str);
 
 int	main(int agrc, char **agrv)
 {
-	int i;
+	int	i;
 
 	i = agrc;
-
 	if (agrc > 1)
 	{
 		while (i > 1)
