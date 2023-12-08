@@ -6,7 +6,7 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 09:53:11 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/01 13:40:00 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/06 11:25:31 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,22 +23,20 @@ void	ft_print_comb(void)
 	char	unit;
 
 	hundred = '0';
-	dicker = '1';
-	unit = '2';
 	while (hundred <= '7')
 	{
+		dicker = hundred + 1;
 		while (dicker <= '8')
 		{
+			unit = dicker + 1;
 			while (unit <= '9')
 			{
 				print_numbers(hundred, dicker, unit);
 				unit++;
 			}
 			dicker++;
-			unit = dicker;
 		}
 		hundred++;
-		dicker = hundred;
 	}
 }
 
