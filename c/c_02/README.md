@@ -14,13 +14,13 @@ Here is are some of the topics covered in C 02:
 
 ## Module
 
-[![ft_strcpy](https://img.shields.io/badge/c_00-ft__strcpy-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex00)
-[![ft_strncpy](https://img.shields.io/badge/c_01-ft__strncpy-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex01)
-[![ft_str_is_alpha](https://img.shields.io/badge/c_02-ft__str__is__alpha-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex02)
-[![ft_str_is_numeric](https://img.shields.io/badge/c_03-ft__str__is__numeric-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex03)
-[![ft_str_is_lowercase](https://img.shields.io/badge/c_04-ft__str__is__lowercase-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex04)
-[![ft_str_is_uppercase](https://img.shields.io/badge/c_05-ft__str__is__uppercase-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex05)
-[![ft_str_is_printable](https://img.shields.io/badge/c_06-ft__str__is__printable-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex06)
-[![ft_strupcase](https://img.shields.io/badge/c_07-ft__strupcase-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex07)
-[![ft_strlowcase](https://img.shields.io/badge/c_08-ft__strlowcase-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex08)
-[![ft_strcapitalize](https://img.shields.io/badge/c_09-ft__strcapitalize-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex09)
+[![ft_strcpy](https://img.shields.io/badge/c_00-ft__strcpy-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex00/ft_strcpy.c)
+[![ft_strncpy](https://img.shields.io/badge/c_01-ft__strncpy-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex01/ft_strncpy.c)
+[![ft_str_is_alpha](https://img.shields.io/badge/c_02-ft__str__is__alpha-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex02/ft_str_is_alpha.c)
+[![ft_str_is_numeric](https://img.shields.io/badge/c_03-ft__str__is__numeric-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex03/ft_str_is_numeric.c)
+[![ft_str_is_lowercase](https://img.shields.io/badge/c_04-ft__str__is__lowercase-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex04/ft_str_is_lowercase.c)
+[![ft_str_is_uppercase](https://img.shields.io/badge/c_05-ft__str__is__uppercase-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex05/ft_str_is_uppercase.c)
+[![ft_str_is_printable](https://img.shields.io/badge/c_06-ft__str__is__printable-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex06/ft_str_is_printable.c)
+[![ft_strupcase](https://img.shields.io/badge/c_07-ft__strupcase-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex07/ft_strupcase.c)
+[![ft_strlowcase](https://img.shields.io/badge/c_08-ft__strlowcase-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex08/ft_strlowcase.c)
+[![ft_strcapitalize](https://img.shields.io/badge/c_09-ft__strcapitalize-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02/ex09/ft_strcapitalize.c)
