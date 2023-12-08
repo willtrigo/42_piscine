@@ -27,9 +27,9 @@ Here is are some of the topics covered in C 01:
 
 ## Module
 
-[![ft_ft](https://img.shields.io/badge/c_00-ft__ft-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_01/ex00)
-[![ft_ultimate_ft](https://img.shields.io/badge/c_01-ft__ultimate__ft-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_01/ex01)
-[![ft_swap](https://img.shields.io/badge/c_02-ft__swap-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_01/ex02)
-[![ft_div_mod](https://img.shields.io/badge/c_03-ft__div__mod-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_01/ex03)
-[![ft_ultimate_div_mod](https://img.shields.io/badge/c_04-ft__ultimate__div__mod-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_01/ex04)
-[![ft_putstr](https://img.shields.io/badge/c_05-ft__putstr-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_01/ex05)
+[![ft_ft](https://img.shields.io/badge/c_00-ft__ft-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_01/ex00/ft_ft.c)
+[![ft_ultimate_ft](https://img.shields.io/badge/c_01-ft__ultimate__ft-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_01/ex01/ft_ultimate_ft.c)
+[![ft_swap](https://img.shields.io/badge/c_02-ft__swap-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_01/ex02/ft_swap.c)
+[![ft_div_mod](https://img.shields.io/badge/c_03-ft__div__mod-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_01/ex03/ft_div_mod.c)
+[![ft_ultimate_div_mod](https://img.shields.io/badge/c_04-ft__ultimate__div__mod-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_01/ex04/ft_ultimate_div_mod.c)
+[![ft_putstr](https://img.shields.io/badge/c_05-ft__putstr-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_01/ex05/ft_putstr.c)
