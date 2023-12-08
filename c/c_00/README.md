@@ -31,10 +31,10 @@ Here is are some of the topics covered in C 00:
 
 ## Module
 
-[![ft_putchar](https://img.shields.io/badge/c_00-ft__putchar-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00/ex00)
-[![ft_print_alphabet](https://img.shields.io/badge/c_01-ft__print__alphabet-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00/ex01)
-[![ft_print_reverse_alphabet](https://img.shields.io/badge/c_02-ft__print__reverse__alphabet-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00/ex02)
-[![ft_print_numbers](https://img.shields.io/badge/c_03-ft__print__numbers-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00/ex03)
-[![ft_is_negative](https://img.shields.io/badge/c_04-ft__is__negative-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00/ex04)
-[![ft_print_comb](https://img.shields.io/badge/c_05-ft__print__comb-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00/ex05)
-[![ft_print_comb2](https://img.shields.io/badge/c_06-ft__print__comb2-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00/ex06)
+[![ft_putchar](https://img.shields.io/badge/c_00-ft__putchar-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00/ex00/ft_putchar.c)
+[![ft_print_alphabet](https://img.shields.io/badge/c_01-ft__print__alphabet-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00/ex01/ft_print_alphabet.c)
+[![ft_print_reverse_alphabet](https://img.shields.io/badge/c_02-ft__print__reverse__alphabet-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00/ex02/ft_print_reverse_alphabet.c)
+[![ft_print_numbers](https://img.shields.io/badge/c_03-ft__print__numbers-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00/ex03/ft_print_numbers.c)
+[![ft_is_negative](https://img.shields.io/badge/c_04-ft__is__negative-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00/ex04/ft_is_negative.c)
+[![ft_print_comb](https://img.shields.io/badge/c_05-ft__print__comb-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00/ex05/ft_print_comb.c)
+[![ft_print_comb2](https://img.shields.io/badge/c_06-ft__print__comb2-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00/ex06/ft_print_comb2.c)
