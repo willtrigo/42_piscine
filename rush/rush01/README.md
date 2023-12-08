@@ -29,4 +29,4 @@ Rush 01 is a testament to your dedication and growth as a programmer. It signifi
 
 ## Module
 
-[![rush 01](https://img.shields.io/badge/project-rush__01-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/rush/rush01/ex00/main.c)
+[![rush 01](https://img.shields.io/badge/project-rush01-skyblue?style=for-the-badge&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/rush/rush01/ex00/main.c)
