@@ -39,15 +39,15 @@ The results of the Piscine are communicated to the candidates, and those who pro
 
 ## Projects
 
-[![](https://img.shields.io/badge/Project-shell_00-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00)
-[![](https://img.shields.io/badge/Project-shell_01-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_01)
+[![](https://img.shields.io/badge/Project-shell__00-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00)
+[![](https://img.shields.io/badge/Project-shell__01-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_01)
 
-[![](https://img.shields.io/badge/Project-c_00-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00)
-[![](https://img.shields.io/badge/Project-c_01-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_01)
-[![](https://img.shields.io/badge/Project-c_02-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02)
-[![](https://img.shields.io/badge/Project-c_03-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_03)
-[![](https://img.shields.io/badge/Project-c_04-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_04)
-[![](https://img.shields.io/badge/Project-c_06-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_06)
+[![](https://img.shields.io/badge/Project-c__00-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_00)
+[![](https://img.shields.io/badge/Project-c__01-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_01)
+[![](https://img.shields.io/badge/Project-c__02-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_02)
+[![](https://img.shields.io/badge/Project-c__03-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_03)
+[![](https://img.shields.io/badge/Project-c__04-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_04)
+[![](https://img.shields.io/badge/Project-c__06-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/c/c_06)
 
 [![](https://img.shields.io/badge/Project-rush01-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/rush/rush01)
 [![](https://img.shields.io/badge/Project-rush02-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/rush/rush02)
