@@ -1,1 +1,1 @@
-find . \( -name '*~' -o -name '#*#' \) -exec rm -rf {} \;
+find . \( -name '*~' -o -name '#*#' \) -tyoe f -print -delete
