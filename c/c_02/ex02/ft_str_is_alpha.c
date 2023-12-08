@@ -6,7 +6,7 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 11:03:53 by dande-je          #+#    #+#             */
-/*   Updated: 2023/06/08 15:38:55 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/12 22:52:31 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,6 @@ char	ft_is_alpha(char str)
 	if (str >= 'a' && str <= 'z')
 		return ('T');
 	else if (str >= 'A' && str <= 'Z')
-		return ('T');
-	else if (str == ' ')
 		return ('T');
 	return ('F');
 }
