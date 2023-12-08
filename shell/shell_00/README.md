@@ -35,12 +35,13 @@ Shell 00 is the first list of exercise in the Piscine. It covers the basics of t
 
 ## Module
 
-[![Z](https://img.shields.io/badge/Shell_00-z-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex00)
-[![Test shell 00](https://img.shields.io/badge/Shell_01-testshell00-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex01)
-[![Oh yeah, mooore...](https://img.shields.io/badge/Shell_02-oh_yeah,_mooore...-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex02)
-[![ssh me!](https://img.shields.io/badge/Shell_03-ssh_me!-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex03)
-[![mdls](https://img.shields.io/badge/Shell_04-midls-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex04)
-[![git commit](https://img.shields.io/badge/Shell_05-git_commit-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex05)
-[![gitignore](https://img.shields.io/badge/Shell_06-gitignore-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex06)
-[![diff](https://img.shields.io/badge/Shell_07-diff-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex07)
-[![clean](https://img.shields.io/badge/Shell_08-clean-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex08)
+[![Z](https://img.shields.io/badge/Shell_00-z-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex00/z)
+[![Test shell 00](https://img.shields.io/badge/Shell_01-testshell00-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex01/testShell00.tar)
+[![Oh yeah, mooore...](https://img.shields.io/badge/Shell_02-oh_yeah,_mooore...-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex02/exo2.tar)
+[![ssh me!](https://img.shields.io/badge/Shell_03-ssh_me!-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex03/id_rsa_pub)
+[![mdls](https://img.shields.io/badge/Shell_04-midls-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex04/midLS)
+[![git commit](https://img.shields.io/badge/Shell_05-git_commit-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex05/git_commit.sh)
+[![gitignore](https://img.shields.io/badge/Shell_06-gitignore-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex06/git_ignore.sh)
+[![diff](https://img.shields.io/badge/Shell_07-diff-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex07/b)
+[![clean](https://img.shields.io/badge/Shell_08-clean-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex08/clean)
+[![ft_magic](https://img.shields.io/badge/Shell_09-ft__magic-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_piscine/tree/main/shell/shell_00/ex09/ft_magic)
