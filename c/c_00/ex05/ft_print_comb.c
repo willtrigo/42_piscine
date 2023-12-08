@@ -6,13 +6,13 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 09:53:11 by dande-je          #+#    #+#             */
-/*   Updated: 2023/05/30 21:29:18 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/01 13:40:00 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ex05_ft_putchar(char c);
+void	ft_putchar_ex05(char c);
 void	print_numbers(char hundred, char dicker, char unit);
 void	ft_print_comb(void);
 
@@ -34,31 +34,27 @@ void	ft_print_comb(void)
 				print_numbers(hundred, dicker, unit);
 				unit++;
 			}
-			unit = dicker++;
+			dicker++;
+			unit = dicker;
 		}
-		dicker = hundred++;
+		hundred++;
+		dicker = hundred;
 	}
 }
 
 void	print_numbers(char hundred, char dicker, char unit)
 {
-	if (hundred == '7' && dicker == '8' && unit == '9')
+	ft_putchar_ex05(hundred);
+	ft_putchar_ex05(dicker);
+	ft_putchar_ex05(unit);
+	if (!(hundred == '7' && dicker == '8' && unit == '9'))
 	{
-		ex05_ft_putchar(hundred);
-		ex05_ft_putchar(dicker);
-		ex05_ft_putchar(unit);
-	}
-	else
-	{
-		ex05_ft_putchar(hundred);
-		ex05_ft_putchar(dicker);
-		ex05_ft_putchar(unit);
-		ex05_ft_putchar(',');
-		ex05_ft_putchar(' ');
+		ft_putchar_ex05(',');
+		ft_putchar_ex05(' ');
 	}
 }
 
-void	ex05_ft_putchar(char c)
+void	ft_putchar_ex05(char c)
 {
 	write(1, &c, 1);
 }

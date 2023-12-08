@@ -6,25 +6,25 @@
 /*   By: dande-je <dande-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 18:18:08 by dande-je          #+#    #+#             */
-/*   Updated: 2023/05/30 21:25:43 by dande-je         ###   ########.fr       */
+/*   Updated: 2023/06/01 13:32:45 by dande-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int		ft_if_negative(int n);
-void	ex04_ft_putchar(char c);
+int		ft_is_negative(int n);
+void	ft_putchar_ex04(char c);
 
-int	ft_if_negative(int n)
+int	ft_is_negative(int n)
 {
-	if (n <= 0)
-		ex04_ft_putchar('N');
+	if (n >= 0)
+		ft_putchar_ex04('P');
 	else
-		ex04_ft_putchar('P');
+		ft_putchar_ex04('N');
 	return (0);
 }
 
-void	ex04_ft_putchar(char c)
+void	ft_putchar_ex04(char c)
 {
 	write(1, &c, 1);
 }
